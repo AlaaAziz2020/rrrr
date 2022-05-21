@@ -77,14 +77,12 @@
     outline: none !important;
 }
 
-html,
 body {
-    color: #898989;
-    font-size: 14px;
     font-family: 'Poppins', sans-serif;
     line-height: normal;
-    font-weight: 300;
     overflow-x: hidden !important;
+        /*overflow-x: hidden !important;*/
+
 }
 
 body.demos .section {
@@ -841,10 +839,9 @@ span {
     z-index: 11;
     float: left;
     width: 218px;
-    background-image: url(images/layout_img/pattern_h.png);
+    background: #fff;
     position: fixed;
-    height: 100%;
-    overflow: auto;
+    height: 100%
 }
 
 .sidebar_blog_1,
@@ -2312,6 +2309,16 @@ i.icon {
     float: left;
     margin: 5px;
 }
+.dropdown-toggle{width: 58px;
+    height: 27px;
+    background: #fff;
+    color:#000 !important
+}
+.pagination a{width: 59px;
+    height: 30px;
+    color:#02100F
+}
+
 
 
 /*------------------------------------------------------------------
@@ -3506,67 +3513,119 @@ table.projects tr td:first-child {
  .ad-info .two{
     width: 16px;
     height: 16px;
-    
-    /* UI Properties */
     background-color: #a4a4a4;
+    font-size: 18px;
     opacity: 1;
-    width: 16px;
-height: 16px;
-            /* height: 14px; */
-            font-size: 18px;
-            letter-spacing: 0px;
-            opacity: 1;
-            font-weight: 500;
-            padding-left: 8px}
+    font-weight: 500;
+    padding-left: 8px}
+.all-advertisement{border-bottom:  3px solid #4F8259;
+    padding-bottom: 8px;}     
+/*Start tab*/
+.tab {
+    float: left;
+    /* border: 1px solid #ccc; */
+    background-color: #fff;
+    width: 100%;
+    height: 300px;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    display: block;
+    background-color: inherit;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    letter-spacing: 0px;
+    opacity: 1;
+    font-size: 18px;
+  }
+  
+  /* Change background color of buttons on hover 
+  .tab button:hover,
+  .tab button .active:hover {
+    background: transparent linear-gradient(270deg, #5C3D2E 0%, #B85C38 100%) 0% 0% no-repeat padding-box;
+    color:#fff
+
+  }
+  */
+  /* Create an active/current "tab button" class */
+  .tab button.active {
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    background: transparent linear-gradient(270deg, #5C3D2E 0%, #B85C38 100%) 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+    width: 188px;
+height: 50px;
+  }
+  .tab button.active:hover{color:#000}
+  /* Style the tab content */
+  .tabcontent {
+    float: left;
+    padding: 0px 12px;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+  }
+  .tab button.logout{color:#FF2929;opacity: 1;}
+
+/*********************End tab**********************************/ 
 /*Start box*/
     .box{/*width: 1162px;*/
         width: 97%;
         height: 1145px;
         background: #FFFFFF 0% 0% no-repeat padding-box;
         border: 1px solid #BFBFBF;
-        border-radius: 8px;
+        border-radius: 5px;
         opacity: 1;
         margin-left: 21px;
-        height: 1145px;
-        /* UI Properties */
-        background: #FFFFFF 0% 0% no-repeat padding-box;
-        border: 1px solid #BFBFBF;
-        border-radius: 5px;
-        opacity: 1;}
-        .box .details{
-            height: 231px;
+        }
+       /* .box .details{
+            
+            min-height: 231px;
             background: #FFFFFF 0% 0% no-repeat padding-box;
             border: 1px solid #B8B5B5;
             opacity: 1;
             margin: 28px;
             border-radius: 6px;
-        }
+        }*/
         .box .details h1{
             font-weight: 400;
-            font-size: 15px;
+            font-size: 21px;
             letter-spacing: 0px;
             color: #B85C38;
             opacity: 1;
-            padding-right: 2%;
-            /*width: 300px;*/
+            padding-left: 2%;
+            /* width: 300px; */
+        
+        
+        
         }
 
         .box .details h2{
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0px;
-    color: #3D7248;
-    opacity: 1;
-    margin-left: 5%;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 0px;
+            color: #3D7248;
+            opacity: 1;
+            margin-left: 1%;
+
 }
     /*padding-left: 16px;
     margin: 24px;*/
 
 
         
-        .box .details h4{font-size: 16px;
+        .box .details h4{font-size: 19px;
             margin-bottom: 23px;
-            margin-left: 11% !important;
+            margin-left: 6% !important;
+            font-weight: normal;
+        
         }
 .box .p{background: var(--unnamed-color-4f8259) 0% 0% no-repeat padding-box;
     background: #4F8259 0% 0% no-repeat padding-box;
@@ -3586,23 +3645,30 @@ height: 16px;
  
 
         .b-h{
-            height: 101px;
-            border-top: 1px solid #b8b5b5;
-            width: 98%;        }
+            /* border-top: 1px solid #b8b5b5; */
+            width: 98%;
+             }
         .b-h .h4{border-right: 1px solid #B85C38;height: 103px;    color: #B85C38;
         }
         .b-h .h2{border-right: 1px solid #B8B5B5;    height: 94px;
         }
         .b-h .h2
-        .dataTables_info{color: #02100f;font-size:  16px;font-weight: 400;
-        }
+        .dataTables_info {color: #02100f;font-size:  17px;font-weight: normal}
+        .dataTables-paginate a{font-size:15px;
+            letter-spacing: 0px;
+            color: #02100F;
+            opacity: 1;}
+        .dataTables-paginate .paginate-text{background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 0.5px solid #02100F1A;
+            border-radius: 5px;
+            opacity: 1;}
         .advertisment-search{margin-left: 10px}
         .green-hammer{padding-left: 44%;padding-top: 49px}
-        .g{border-left: 1px solid #B8B5B5;
+        /*.g{border-left: 1px solid #B8B5B5;
             margin-left: 86px;}
             .g p{color:#4F8259; background: #4F8259 ;
                 border-radius: 4px;
-                opacity: 0.11;}
+                opacity: 0.11;}*/
 .days,.months{background-color: #EBEBEB;width: 24px;
     height: 32px;}
     .number{text-align: center;
@@ -3619,9 +3685,8 @@ height: 16px;
             font-weight: normal;
         }
         .timer{        margin-left: 20px;
-            padding-left: 13%;
+            padding-left: 3%;
         }
-        .document{border-left: 0;}
        /* .pa{background: var(--unnamed-color-4f8259) ;
             border-radius: 4px;
             text-align: center;
@@ -3630,11 +3695,103 @@ height: 16px;
             letter-spacing: 0px;
             opacity: 0.11;}
             .pa .p{opacity: 1;letter-spacing: 0px;
-                color:#4F8259}
+                color:#4F8259}*/
+    .details{  
+        width: 1180px;
+        /* width: 1187px; */
+        height: 140px;
+        border-radius: 80%;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        opacity: 1;
+       /* margin-top: 37px;*/
+        margin-bottom: 37px;
+    
+    }
+    .details .info{    border-right: 1px solid #B8B5B5;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-bottom: 1px solid #B8B5B5;
+        border-left: 1px solid #B8B5B5;
+        height: 285px;
+        width: 1149px;
+        border-top: 1px solid #B8B5B5;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
 
+        /* border-left: 1px solid #B8B5B5; */
+    }
+    
+
+.details .General{
+   letter-spacing: 0px;
+    color: #4F8259;
+    opacity: 1;
+   /* color: #4F8259; */
+}
+.details .g{
+    width: 45%;
+    height: 34px;
+    background: #badec84d;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 50%;
+}
+.tenders{
+    border-top: 1px solid #B8B5B5;
+    width: 1170px;
+}
+.tenders h3{
+    width: 26%;
+    height: 143px;
+    text-align: left;
+    font-size: 19px;
+    letter-spacing: 0px;
+    color: #B85C38;
+
+
+}
+.status{   
+    width: 26%;
+    padding-left: 31px;
+    border-right: 1px solid #B8B5B5;
+    height:20px
+}
+
+
+    .status .pic1{padding-left: 22%;}
+    .box22{ 
+        
+        width: 1190px;
+        /*height: 1145px;*/
+    opacity: 1;
+    margin-left: 21px;
+        border-top: 1px solid #B8B5B5;
+    }
+    .box22 h1{
+        width: 269px;
+        font-size: 16px;
+        text-align: left;
+        color: #B85C38;
+        /*border-right: 1px solid #B8B5B5;*/
+        height: 100px;
+    
+    }
+    .box22 .money{border: none;}
+    .box22 .pic1{text-align: center;}
+    .counter-box{    border-top: 1px solid #B8B5B5;
+        border-right: 1px solid #B8B5B5;
+        border-bottom: 1px solid #B8B5B5;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;    
+    }
+    .s-box{border-right: 1px solid #B8B5B5;
+        height: 114px;
+    }
+    .money img{    margin-left: 55px;
+    }
 /*End box*/
-/*------------------------------------------------------------------
-    27. Map
+/*   27. Map
 -------------------------------------------------------------------*/
 
 #map {
